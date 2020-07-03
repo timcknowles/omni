@@ -1,32 +1,24 @@
 <template>
+  
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        filter
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div>
+          
+          <h1 class="title">
+            OMNI
+          </h1>
+        </div>
       </div>
+      <div class="column">Filter
+        <Logo />
+      </div>
+      <div class="column"></div>
+        <h1 class="title">
+          App
+        </h1>
     </div>
   </div>
-
-  
 </template>
 
 
