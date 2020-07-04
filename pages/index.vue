@@ -25,7 +25,11 @@
 
 
 <script>
-export default {}
+export default {
+  layout: 'default_app',
+  
+  
+}
 </script>
 
 <style>
