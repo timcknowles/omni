@@ -1,24 +1,39 @@
 <template>
   
-  <div class="container">
-    <div class="columns">
-      <div class="column is-one-third">
-        <div>
-          
-          <h1 class="title">
-            OMNI
-          </h1>
-        </div>
-      </div>
-      <div class="column">Filter
-        <Logo />
-      </div>
-      <div class="column"></div>
-        <h1 class="title">
-          App
-        </h1>
+  <div class="tile is-ancestor">
+  <div class="tile is-4 is-vertical is-parent">
+    <div class="tile is-child box has-text-centered">
+      <p class="title">One</p>
+      <Dose />
+    </div>
+    <div class="tile is-child box">
+      <p class="title">Two</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
     </div>
   </div>
+  <div class="tile is-parent">
+    <div class="tile is-child box has-text-centered">
+      <p class="title">Three</p>
+       <Logo />
+    </div>
+  </div>
+   <div class="tile is-4 is-vertical is-parent">
+    <div class="tile is-child box">
+      <p class="title">four</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+    <div class="tile is-child box">
+      <p class="title">five</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+  </div>
+</div>
+  
+
+ 
+
+
+
 </template>
 
 
