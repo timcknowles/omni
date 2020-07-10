@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="638.667" height="2173.334" viewBox="0 0 479 1630" version="1.1" id="svg101" class="svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479 1630" version="1.1" id="svg101" class="svg">
   <g class="chevron-down-lights" fill="none" stroke="none" stroke-width="1">>
     <path class="chevron-down-lights-light chevron-down-lights-light--1"  d="M64.07 215.49s-.11 45.81.54 46.98c.94 1.71 76.93 61.23 78.93 61.23s77.99-59.52 78.93-61.23c.65-1.17.55-46.98.55-46.98l-79.48 60.53-79.47-60.53z"/>
     <path d="M64.426 322.906s-.11 45.81.54 46.98c.94 1.71 76.93 61.23 78.93 61.23s77.99-59.52 78.93-61.23c.65-1.17.55-46.98.55-46.98l-79.48 60.53-79.47-60.53z" class="chevron-down-lights-light chevron-down-lights-light--2"/>
@@ -39,7 +39,7 @@
   <style>
     .svg {
 
-    height: 500px;
+    height: 600px;
     }
     .top {
 

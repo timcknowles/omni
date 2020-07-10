@@ -1,7 +1,12 @@
 <template>
   <div>
-    <Nav />
-    <nuxt />
+    <div>
+      <Nav />
+    </div>
+  
+    <div class="container is-widescreen">
+      <nuxt />
+    </div>
   </div>
 </template>
 <script>
@@ -12,3 +17,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+  @import '~assets/styles/main.scss';
+</style>

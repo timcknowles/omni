@@ -13,7 +13,8 @@
   </div>
   <div class="tile is-parent">
     <div class="tile is-child box has-text-centered">
-      <p class="title">Three</p>
+      
+      
        <Logo />
     </div>
   </div>

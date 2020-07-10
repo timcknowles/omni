@@ -2,18 +2,29 @@
 <template>
  
     <div>
-        <div class="select is-rounded is-large is-success">
-            <select :value="ph.value" @change="onSelectChange($event, 'ph')">
-                <option>pH</option>
-                <option v-for="(item, phIndex) in phOptions" :key="phIndex" :data-index="phIndex" :value="item">{{item}}</option>
-            </select>
+        <div class="field">
+            <div class="control is-expanded">
+                <div class="select is-rounded is-large is-success is-fullwidth">
+                    <select :value="ph.value" @change="onSelectChange($event, 'ph')">
+                        <option>pH</option>
+                        <option v-for="(item, phIndex) in phOptions" :key="phIndex" :data-index="phIndex" :value="item">{{item}}</option>
+                    </select>
+                
+                </div>
+            </div>
         </div>
-         <div class="select is-rounded is-large is-success ">
-            <select :value="potassium.value" @change="onSelectChange($event, 'potassium')">
-                <option>K+</option>
-                <option v-for="(item, potassiumIndex) in potassiumOptions" :data-index="potassiumIndex" :key="potassiumIndex">{{item}}</option>
-            </select>
+        <div class="field">
+            <div class="control is-expanded">
+                <div class="select is-rounded is-large is-success is-fullwidth">
+                    <select :value="potassium.value" @change="onSelectChange($event, 'potassium')">
+                        <option>K+</option>
+                        <option v-for="(item, potassiumIndex) in potassiumOptions" :data-index="potassiumIndex" :key="potassiumIndex">{{item}}</option>
+                    </select>
+                </div>
+            </div> 
+            
         </div>
+            
         <div>
             Dialysate Flow Rate (QD):
             <p>{{dialysateFlowrateValue}}</p>
@@ -47,6 +58,7 @@ export default {
             phOptions: ['<7.10', '7.10-7.19','7.20-7.29','7.30-7.39','7.40-7.44','7.45-7.49','7.50-7.54', '>7.55'],
             potassiumOptions: [">6.0","5.6-6.0","5.1-5.5", "4.6-5.0", "4.0-4.5", "<4.0"],
             values: [
+               
                 ["2300","2100","1900", "1800", "1600", "1400"],
                 ["2300","2100","1900", "1700", "1500", "1400"],
                 ["2200","2100","1900", "1700", "1400", "1400"],
