@@ -2,22 +2,34 @@
     <b-navbar>
         <template slot="brand">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <h1>OMNI</h1>
+            
+                <img
+                        src="~/static/ACCU_banner.png"
+                        alt="RLH logo"
+                    >
+           
             </b-navbar-item>
+        
         </template>
         <template slot="start">
             <b-navbar-item href="/">
                 Home
             </b-navbar-item>
-            <b-navbar-item href="/RCA">
-                RCA
+            <b-navbar-item href="/">
+                Re-circulation
             </b-navbar-item>
-            <b-navbar-dropdown label="Info">
+            <b-navbar-item href="/">
+                Access
+            </b-navbar-item>
+            <b-navbar-item href="/">
+                Hyperkalaemia
+            </b-navbar-item>
+            <b-navbar-dropdown label="Anticoagulation">
                 <b-navbar-item href="#">
-                    About
+                    systemic anticoagulation
                 </b-navbar-item>
                 <b-navbar-item href="#">
-                    Contact
+                    VTE
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>
