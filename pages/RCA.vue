@@ -1,165 +1,75 @@
 <template>
-    <section>
-        <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
-            <div
-                slot="trigger" 
-                slot-scope="props"
-                class="card-header"
-                role="button"
-                aria-controls="contentIdForA11y3">
-                <p class="card-header-title">
-                    Exclusions and Cautions for the use of RCA 
-                </p>
-                <a class="card-header-icon">
-                    <b-icon
-                        :icon="props.open ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </a>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <div class="columns">
-                        <div class="column">
-                            <h4>EXCLUSIONS</h4>
+  <v-card>
+    <v-tabs
+     fixed-tabs
+      v-model="tab"
+      background-color="purple darken-4"
+      dark
+    >
+      <v-tab
+        v-for="item in items"
+        :key="item.tab"
+      >
+        {{ item.tab }}
+      </v-tab>
+    </v-tabs>
 
-                            <ul>
-                                <li> Liver Failure </li>
-                                <li> Severe lactic acidosis</li>
-                                <li> pH > 7.5 or HCO3 > 40 mmol/L</li>
-                                <li> No central venous access  (exc. Vascath)</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h4>CAUTIONS</h4>
-                            <ul>
-                                <li>Lactate >5 mmol/L</li>
-                                <li>Chronic Liver disease</li>
-                                <li>Post hepatic resection</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <footer class="card-footer">
-                <div class="card-footer-item">
-                    <h1>Use only  Calcium-free dialysate  with 4mmol K+</h1>
-
-                </div>
-                
-            </footer>
-        </b-collapse>
-
-        <br>
+    <v-tabs-items v-model="tab">
+      <v-tab-item
         
+      >
+        <div class="tab-item-wrapper">
+            <v-card flat>
+            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra, elit vel tempus fringilla, velit ex ullamcorper libero, sit amet aliquam felis tellus quis mauris. Curabitur a diam nec enim porttitor scelerisque eget vitae leo. Curabitur nec enim id velit gravida consectetur. Integer eu nulla bibendum, pulvinar est eu, semper nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus molestie urna lacus, ac suscipit risus suscipit nec. Sed pretium augue mi, eget congue sapien volutpat et. Aenean mattis nulla dapibus dolor efficitur condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc dolor metus, blandit id ultrices vel, condimentum ut urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nisi mauris, tristique eu porttitor non, condimentum ac nisl.
 
-        <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
-            <div
-                slot="trigger" 
-                slot-scope="props"
-                class="card-header"
-                role="button"
-                aria-controls="contentIdForA11y3">
-                <p class="card-header-title">
-                    Initial Calcium and pH check
-                </p>
-                <a class="card-header-icon">
-                    <b-icon
-                        :icon="props.open ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </a>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <ul>
-                        <li>Check an [iCa] and pH on an ABG BEFORE starting CRRT</li>
-                        <li>If [iCa] is <0.9 administer 10mL Calcium Gluconate (2.2mmol) infusion</li>
-                        <li>Set the CALCIUM RATIO to start at 1.7 mmol/L of effluent</li>
-                        <li>If re-starting the filter within 4 hours of disconnection, keep the previous ratio</li>
-                        <li>Re-check Ca 30 min after starting and  any dose adjustments – titrate according to Ca table</li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- <footer class="card-footer">
-                <a class="card-footer-item">Save</a>
-                <a class="card-footer-item">Edit</a>
-                <a class="card-footer-item">Delete</a>
-            </footer> -->
-        </b-collapse>
-        <br>
-        <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
-            <div
-                slot="trigger" 
-                slot-scope="props"
-                class="card-header"
-                role="button"
-                aria-controls="contentIdForA11y3">
-                <p class="card-header-title">
-                    CITRATE and pH management – Initial setup 
-
-                </p>
-                <a class="card-header-icon">
-                    <b-icon
-                        :icon="props.open ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </a>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <ul>
-                        <li>Use OMNISET-L or PRO sets only</li>
-                        <li>PROGRAM Citrate ratio as 4 mmol/L of blood – NEVER ADJUST THIS RATIO</li>
-                        <li>Set the CALCIUM RATIO to start at 1.7 mmol/L of effluent</li>
-                        <li>Select initial and titration parameters according to the tables on the next page, depending on the patient’s IBW</li>
-                        <li>If pH < 7.20 at the start  administer 50 mls  of 8.4% Bicarbonate over 30 min</li>
-                        <li>Recheck pH and K+ 3-6 hourly and adjust according to tables</li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- <footer class="card-footer">
-                <a class="card-footer-item">Save</a>
-                <a class="card-footer-item">Edit</a>
-                <a class="card-footer-item">Delete</a>
-            </footer> -->
-        </b-collapse>
-        <br>
-
-         <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
-            <div
-                slot="trigger" 
-                slot-scope="props"
-                class="card-header"
-                role="button"
-                aria-controls="contentIdForA11y3">
-                <p class="card-header-title">
-                    CALCIUM MONITORING & ADJUSTMENT (During treatment)
-
-                </p>
-                <a class="card-header-icon">
-                    <b-icon
-                        :icon="props.open ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </a>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <Calcium />
-
-                </div>
-            </div>
-            <!-- <footer class="card-footer">
-                <a class="card-footer-item">Save</a>
-                <a class="card-footer-item">Edit</a>
-                <a class="card-footer-item">Delete</a>
-            </footer> -->
-        </b-collapse>
-
-
-    </section>
+In tristique bibendum velit. Donec placerat accumsan eros quis rutrum. Etiam elit tellus, pulvinar in ex eget, tempor viverra magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec congue leo sit amet sem efficitur consequat. Nulla elit neque, laoreet lacinia velit et, suscipit varius ante. Nulla quis nisi sed dui aliquam iaculis. Maecenas ac purus ac purus tempor maximus. Maecenas volutpat ante erat, in tempor mi bibendum id. Nulla dictum tempus nisl ac venenatis. Nunc quis urna convallis, cursus orci eu, convallis erat. Praesent et libero urna. Aenean vehicula maximus dolor, et cursus mi. Sed varius lobortis ex, vitae ullamcorper eros volutpat et.</v-card-text>
+            </v-card>
+          
+        </div>
+      </v-tab-item>
+      <v-tab-item
+        
+      >
+        <div class="tab-item-wrapper">
+            <v-card flat>
+            <v-card-text><Dose /></v-card-text>
+            </v-card>
+          
+        </div>
+      </v-tab-item>
+    </v-tabs-items>
+  </v-card>
+  
 </template>
 
+<script>
+  export default {
+    data () {
+      return {
+        tab: null,
+        items: [
+          { tab: 'Setup', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra, elit vel tempus fringilla, velit ex ullamcorper libero, sit amet aliquam felis tellus quis mauris. Curabitur a diam nec enim porttitor scelerisque eget vitae leo. Curabitur nec enim id velit gravida consectetur. Integer eu nulla bibendum, pulvinar est eu, semper nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus molestie urna lacus, ac suscipit risus suscipit nec. Sed pretium augue mi, eget congue sapien volutpat et. Aenean mattis nulla dapibus dolor efficitur condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc dolor metus, blandit id ultrices vel, condimentum ut urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nisi mauris, tristique eu porttitor non, condimentum ac nis' },
+          { tab: 'Dose Adjustment', content: '<Calcium />'},
+        //   { tab: 'Three', content: 'Tab 3 Content' },
+        //   { tab: 'Four', content: 'Tab 4 Content' },
+        //   { tab: 'Five', content: 'Tab 5 Content' },
+        //   { tab: 'Six', content: 'Tab 6 Content' },
+        //   { tab: 'Seven', content: 'Tab 7 Content' },
+        //   { tab: 'Eight', content: 'Tab 8 Content' },
+        //   { tab: 'Nine', content: 'Tab 9 Content' },
+        //   { tab: 'Ten', content: 'Tab 10 Content' },
+        ],
+      }
+    },
+  }
+</script>
 
-             
+<style>
+    .tab-item-wrapper {
+    /* vuetify sets the v-tabs__container height to 48px */
+    height: calc(100vh - 48px);
+    width: calc(100vh - 48px);
 
+    }
+    
+</style>

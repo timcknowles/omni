@@ -2,7 +2,7 @@
   
   <div class="tile is-ancestor">
   <div class="tile is-4 is-vertical is-parent">
-    <nuxt-link to="/RCA" class="tile is-child box has-text-centered notification is-success">
+    <nuxt-link to="/Rca" class="tile is-child box has-text-centered notification is-success">
       <p class="title is-1">RCA</p>
       <!-- <Dose /> -->
     </nuxt-link>
