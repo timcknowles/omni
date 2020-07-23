@@ -2,10 +2,10 @@
   
   <div class="tile is-ancestor">
   <div class="tile is-4 is-vertical is-parent">
-    <a href="/RCA" class="tile is-child box has-text-centered notification is-success">
+    <nuxt-link to="/RCA" class="tile is-child box has-text-centered notification is-success">
       <p class="title is-1">RCA</p>
       <!-- <Dose /> -->
-    </a>
+    </nuxt-link>
     <div class="tile is-child box notification is-warning">
       <p class="title is-1">Heparin</p>
       <p>brief heparin intro</p>
