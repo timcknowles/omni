@@ -1,7 +1,8 @@
 <template>
   <div>
     <div>
-      <Nav />
+      <topNav />
+      <sideNav />
     </div>
   
     <div class="container is-widescreen">
@@ -10,10 +11,13 @@
   </div>
 </template>
 <script>
-import Nav from "~/components/navBar.vue";
+import topNav from "~/components/navBar.vue";
+import sideNav from "~/components/sideBar.vue";
 export default {
   components: {
-    Nav
+    topNav,
+    sideNav
+
   }
 };
 </script>
